@@ -1,0 +1,22 @@
+# C/C++
+*.out
+*.exe
+*.o
+*.obj
+
+# Java
+*.class
+
+# IDEs
+.idea/
+.vscode/
+
+# Temporary files
+*.log
+*.tmp
+*.swp
+*~
+
+# Test files
+input.txt
+output.txt
