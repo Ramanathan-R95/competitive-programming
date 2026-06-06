@@ -1,22 +1,69 @@
-# C/C++
+# Compiled C/C++ binaries
 *.out
 *.exe
+*.app
+*.elf
+
+# Object files
 *.o
 *.obj
 
-# Java
-*.class
+# Static/Dynamic libraries
+*.a
+*.so
+*.dll
+*.dylib
 
-# IDEs
+# Debug files
+*.gdb_history
+
+# Java compiled files
+*.class
+*.jar
+*.war
+*.ear
+
+# IntelliJ IDEA
 .idea/
+*.iml
+out/
+
+# VS Code
 .vscode/
 
-# Temporary files
+# Eclipse
+.project
+.classpath
+.settings/
+bin/
+
+# NetBeans
+nbproject/private/
+build/
+dist/
+
+# CMake
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+compile_commands.json
+
+# Logs
 *.log
+
+# Temporary files
 *.tmp
+*.temp
 *.swp
+*.swo
 *~
 
-# Test files
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Codeforces custom test files (optional)
 input.txt
 output.txt
+test.txt
