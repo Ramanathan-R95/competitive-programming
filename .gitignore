@@ -73,4 +73,6 @@ Thumbs.db
 # Codeforces custom test files (optional)
 input.txt
 output.txt
-test.txt
+test.txt.cph/
+**/.cph/
+*.prob
