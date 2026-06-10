@@ -6,7 +6,11 @@
 # CPH files
 .cph/
 *.cph
+# Ignore all .cph directories recursively
+**/.cph/
 
+# Ignore CPH problem files
+*.prob
 # Object files
 *.o
 *.obj
