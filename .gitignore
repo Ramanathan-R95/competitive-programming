@@ -3,6 +3,9 @@
 *.exe
 *.app
 *.elf
+# CPH files
+.cph/
+*.cph
 
 # Object files
 *.o
