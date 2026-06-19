@@ -1,4 +1,4 @@
-msg = input("Enter Text :")
+msg = input("Text :")
 words = msg.split()
 
 result = list(map(lambda x : [len(x),x] ,words))
