@@ -1,10 +1,10 @@
 import java.util.*;
 
 public class BOlyaAndGameWithArrays {
-    public static int getSecondMin(int[] arr, int min){
-        int result = Integer.MAX_VALUE;
-        int count = 0;
-        for(int i:arr){
+    public static long getSecondMin(long[] arr, long min){
+        long result = Integer.MAX_VALUE;
+        long count = 0;
+        for(long i:arr){
             if(i < result && i > min)
                 result = i;
             if(i == min) 
@@ -19,15 +19,15 @@ public class BOlyaAndGameWithArrays {
         int t = sc.nextInt();
         while(t-- != 0){
             int n = sc.nextInt();
-            int[] firstMin = new int[n];
-            int[] secondMin = new int[n];
-            List<int[]> matrix = new ArrayList<>();
+            long[] firstMin = new long[n];
+            long[] secondMin = new long[n];
+            List<long[]> matrix = new ArrayList<>();
             for(int i=0;i<n;i++){
                 int l = sc.nextInt();
-                int[] elements = new int[l];
-                int min = Integer.MAX_VALUE;
+                long[] elements = new long[l];
+                long min = Integer.MAX_VALUE;
                 for(int j=0;j<l;j++){
-                    elements[j] = sc.nextInt();
+                    elements[j] = sc.nextLong();
                     min = min < elements[j] ? min : elements[j];
 
                 }
@@ -35,10 +35,10 @@ public class BOlyaAndGameWithArrays {
                 secondMin[i] = getSecondMin(elements, min);
                 matrix.add(elements);
             }
-            int secMinimum = getSecondMin(secondMin, Integer.MIN_VALUE);
-            int firstMinimum = getSecondMin(firstMin, Integer.MIN_VALUE);
-            int result = 0;
-            for(int i:secondMin)
+            long secMinimum = getSecondMin(secondMin, Integer.MIN_VALUE);
+            long firstMinimum = getSecondMin(firstMin, Integer.MIN_VALUE);
+            long result = 0;
+            for(long i:secondMin)
                 result+=i;
             result -= secMinimum;
             result += firstMinimum;
